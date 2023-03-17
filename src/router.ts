@@ -46,8 +46,7 @@ const upload = multer({
       callback(null, `${Date.now()}-${file.originalname}`)
     },
   })
-})
-
+});
 
 // register user
 router.post('/auth/register', registerUser)
